@@ -1,0 +1,7 @@
+.firebase
+src/.next
+admin/service-account-key.json
+node_modules
+_ignore
+dist
+.env

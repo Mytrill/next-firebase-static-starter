@@ -1,4 +1,7 @@
 {
+  "generalConfiguration": {
+    "sortOnBeforeSave": true
+  },
   "importStringConfiguration": {
     "quoteMark": "double",
     "hasSemicolon": false

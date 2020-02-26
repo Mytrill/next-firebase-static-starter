@@ -1,0 +1,18 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+      { "source": "/projects/*", "destination": "/projects/[id].html <- example for dynamic pages" },
+      { "source": "/api/*", "function": "app" }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

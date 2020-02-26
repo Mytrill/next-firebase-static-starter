@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "your-project-dev",
+    "dev": "your-project-dev",
+    "prod": "your-project-prod"
+  }
+}

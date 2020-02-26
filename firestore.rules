@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // in general, there is a public and private profile for a user
+    match /users_private/{userId} {
+      // can only create own user and starts with no subscription
+      allow create: if request.auth.uid == userId && request.resource.data.subscriptions == null;
+      // can only read own user
+      allow read: if request.auth.uid == userId;
+      // only in admin SDK (user contains current limits and plan)
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

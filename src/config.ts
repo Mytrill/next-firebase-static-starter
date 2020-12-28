@@ -1,4 +1,4 @@
-import { StringMap } from "./common/types"
+import { StringMap } from "./types"
 
 /*
  * This file contains configuration that is shared between the client (nextjs' app) and the server (firebase functions).
